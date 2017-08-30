@@ -31,7 +31,7 @@ function appendKitten(name) {
 }
 
 function removeLastKitten() {
-  var newArr = kittens.splice(- 1);
+  var newArr = kittens.slice(0, -1);
   return newArr;
 }
 
