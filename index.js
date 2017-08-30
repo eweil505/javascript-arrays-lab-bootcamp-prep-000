@@ -20,7 +20,7 @@ function destructivelyRemoveFirstKitten() {
   return kittens;
 }
 function prependKitten(name) {
-  var newArray = name.concat(kittens);
+  var newArray = [name, ...kittens];
   return newArray;
 }
 
