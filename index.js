@@ -26,7 +26,8 @@ function prependKitten(name) {
 
 
 function appendKitten(name) {
-  var newArr = [...kittens + name];
+  var newArr = kittens.slice(0);
+  newArr.push(name);
   return newArr;
 }
 
