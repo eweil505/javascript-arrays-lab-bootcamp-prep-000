@@ -21,16 +21,16 @@ function destructivelyRemoveFirstKitten() {
 }
 
 function appendKitten(name) {
-  var newArr = kittens.push(name);
+  var newArr = kittens.concat(name);
   return newArr;
 }
 
 function removeLastKitten() {
-  var newArr = kittens.pop();
+  var newArr = kittens.slice(kittens.length - 1);
   return newArr;
 }
 
 function removeFirstKitten() {
-  var newArr = kittens.unshift();
-  return newArr; 
+  var newArr = kittens.slice(1);
+  return newArr;
 }
